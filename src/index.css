@@ -71,3 +71,47 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+/* Custom checkbox styles */
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  width: 20px; /* Width and height for the circular checkbox */
+  height: 20px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #34a82c; /* Border for the circular checkbox */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #34a82c; /* Border for the circular checkbox */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Add styles for the checkmark icon in checked state */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+  content: "✔"; /* Checkmark symbol */
+  font-size: 12px; /* Adjust the size of the checkmark */
+  color: #34a82c; /* Change the color of the checkmark in checked state */
+}
