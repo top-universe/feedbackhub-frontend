@@ -11,15 +11,17 @@ import GetStarted from "../sections/HomePage/GetStarted";
 
 const Home = () => (
   <MainLayout>
-    <Hero />
-    <WhatWeProvide />
-    <Categories />
-    <Clients />
-    <Reviews />
-    <OwnABusiness />
-    <AboutUs />
-    <FAQs />
-    <GetStarted />
+    <>
+      <Hero />
+      <WhatWeProvide />
+      <Categories />
+      <Clients />
+      <Reviews />
+      <OwnABusiness />
+      <AboutUs />
+      <FAQs />
+      <GetStarted />
+    </>
   </MainLayout>
 )
 
