@@ -192,9 +192,19 @@
   .password-input {
     @apply;
   }
+
+  /* CONTAINERS */
+
+  .container-64 {
+    @apply px-4 md:px-8 lg:px-10 xl:px-16 2xl:px-32;
+  }
+
+  .container-108 {
+    @apply px-4 md:px-12 lg:px-16 xl:px-[6.75rem] 2xl:px-40;
+  }
 }
 
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -267,4 +277,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
