@@ -10,18 +10,15 @@ const DestructiveButton = ({
     ...props
 }) => {
 
-    const stylesObj = Object.assign({}, styles);
-    const textStylesObj = Object.assign({}, textStyles)
-
     return (
         <button
             type={type}
             className={`destructive-btn ${fullWidth ? 'w-full' : 'w-fit'}`}
             onClick={clickHandler}
-            style={stylesObj}
+            style={styles}
             {...props}
         >
-            <span className='w-max' style={textStylesObj}>
+            <span className='w-max' style={textStyles}>
                 {text}
             </span>
         </button>

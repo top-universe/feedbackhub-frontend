@@ -66,6 +66,9 @@ export default {
       },
       fontFamily: {
         outfit: ["'Outfit'", "sans-serif"]
+      },
+      spacing: {
+        authMainHeight: "calc(100vh - 96px)",
       }
     },
   },
