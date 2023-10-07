@@ -69,6 +69,10 @@ export default {
       },
       spacing: {
         authMainHeight: "calc(100vh - 96px)",
+      },
+      backgroundImage: {
+        mission: 'url( "./assets/about-img-1.png")',
+        vision: 'url( "./assets/about-img-2.png")',
       }
     },
   },
