@@ -21,7 +21,7 @@ const OwnABusiness = () => {
                     <SecondaryButton text={'Request a Demo'} />
                     <PrimaryButton text={'Get Started'}/>
                 </div>
-            </div>
+            </div>  
             <div className='flex items-center lg:justify-end business relative  '>
                 <img src={businessImg} alt="a woman holding a tab in a restaurant and she smiling " width={500} height={400} className='w-4/5 z-10' />
                 <img src={Ellipse2} alt=" an ellipse shape" className='absolute top-0 -right-36 w-60 hidden lg:block'/>
