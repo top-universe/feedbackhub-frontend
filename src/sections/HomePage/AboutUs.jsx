@@ -8,7 +8,7 @@ const AboutUs = () => {
 			<h2 className="text-center font-bold md:text-4xl text-3xl text-bluegray-9 mb-8 font-outfit">
 				About Us
 			</h2>
-			<div className="md:bg-mission w-full md:py-16 bg-no-repeat vision   flex items-center md:justify-end justify-center mb-11 ">
+			<div className="md:bg-mission w-full md:py-16 bg-no-repeat bg-75% bg-left   flex items-center md:justify-end justify-center mb-11 ">
 				<About
 					heading={"Our Vision"}
 					img={visionImg}
@@ -19,7 +19,7 @@ const AboutUs = () => {
 					that drives positive change.
 				</About>
 			</div>
-			<div className="md:bg-vision w-full md:py-16 bg-no-repeat mission flex items-center md:justify-start justify-center">
+			<div className="md:bg-vision w-full md:py-16 bg-no-repeat bg-75% bg-right flex items-center md:justify-start justify-center">
 				<About
 					heading={"Our Mission"}
 					img={missionImg}
@@ -40,10 +40,10 @@ const About = ({ heading, children, img, alt }) => {
 	return (
 		<article className="max-w-[31rem] bg-bluegray-2 px-6 py-6 rounded-md text-center ">
 			<div>
-				<h3 className="text-pri-blue font-bold font-outfit lg:text-3xl text-2xl  mb-3">
+				<h3 className="text-pri-blue lg:text-fh-3xl-bold text-fh-2xl-bold  mb-3">
 					{heading}
 				</h3>
-				<p className="lg:text-xl text-base text-black-0a font-outfit mt-6 mb-6 md:mb-0 w-full">
+				<p className="lg:text-fh-xl text-fh-base text-black-0a font-outfit mt-6 mb-6 md:mb-0 w-full">
 					{children}
 				</p>
 			</div>

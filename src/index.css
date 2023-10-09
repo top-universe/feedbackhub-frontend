@@ -239,17 +239,3 @@
 		@apply px-4 md:px-12 lg:px-16 xl:px-[6.75rem] 2xl:px-40;
 	}
 }
-.business {
-	background: url("./assets/Ellipse-1.png");
-	background-repeat: no-repeat;
-	background-size: 100px;
-	background-position: 60px 110px;
-}
-.vision,
-.mission {
-	background-size: 75%;
-	background-position: left;
-}
-.mission {
-	background-position: right;
-}
