@@ -1,175 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-  /* TYPOGRAPHY */
+	/* TYPOGRAPHY */
 
-  .text-fh-xs {
-    @apply text-xs;
-  }
+	.text-fh-xs {
+		@apply text-xs;
+	}
 
-  .text-fh-xs-mid {
-    @apply text-xs font-medium;
-  }
+	.text-fh-xs-mid {
+		@apply text-xs font-medium;
+	}
 
-  .text-fh-xs-semi {
-    @apply text-xs font-semibold;
-  }
+	.text-fh-xs-semi {
+		@apply text-xs font-semibold;
+	}
 
-  .text-fh-xs-bold {
-    @apply text-xs font-bold;
-  }
+	.text-fh-xs-bold {
+		@apply text-xs font-bold;
+	}
 
-  .text-fh-sm {
-    @apply text-sm;
-  }
+	.text-fh-sm {
+		@apply text-sm;
+	}
 
-  .text-fh-sm-mid {
-    @apply text-sm font-medium;
-  }
+	.text-fh-sm-mid {
+		@apply text-sm font-medium;
+	}
 
-  .text-fh-sm-semi {
-    @apply text-sm font-semibold;
-  }
+	.text-fh-sm-semi {
+		@apply text-sm font-semibold;
+	}
 
-  .text-fh-sm-bold {
-    @apply text-sm font-bold;
-  }
+	.text-fh-sm-bold {
+		@apply text-sm font-bold;
+	}
 
-  .text-fh-base {
-    @apply text-base;
-  }
+	.text-fh-base {
+		@apply text-base;
+	}
 
-  .text-fh-base-mid {
-    @apply text-base font-medium;
-  }
+	.text-fh-base-mid {
+		@apply text-base font-medium;
+	}
 
-  .text-fh-base-semi {
-    @apply text-base font-semibold;
-  }
+	.text-fh-base-semi {
+		@apply text-base font-semibold;
+	}
 
-  .text-fh-base-bold {
-    @apply text-base font-bold;
-  }
+	.text-fh-base-bold {
+		@apply text-base font-bold;
+	}
 
-  .text-fh-lg {
-    @apply text-lg;
-  }
+	.text-fh-lg {
+		@apply text-lg;
+	}
 
-  .text-fh-lg-mid {
-    @apply text-lg font-medium;
-  }
+	.text-fh-lg-mid {
+		@apply text-lg font-medium;
+	}
 
-  .text-fh-lg-semi {
-    @apply text-lg font-semibold;
-  }
+	.text-fh-lg-semi {
+		@apply text-lg font-semibold;
+	}
 
-  .text-fh-lg-bold {
-    @apply text-lg font-bold;
-  }
+	.text-fh-lg-bold {
+		@apply text-lg font-bold;
+	}
 
-  .text-fh-xl {
-    @apply text-xl leading-8;
-  }
+	.text-fh-xl {
+		@apply text-xl leading-8;
+	}
 
-  .text-fh-xl-mid {
-    @apply text-xl leading-8 font-medium;
-  }
+	.text-fh-xl-mid {
+		@apply text-xl leading-8 font-medium;
+	}
 
-  .text-fh-xl-semi {
-    @apply text-xl leading-8 font-semibold;
-  }
+	.text-fh-xl-semi {
+		@apply text-xl leading-8 font-semibold;
+	}
 
-  .text-fh-xl-bold {
-    @apply text-xl leading-8 font-bold;
-  }
+	.text-fh-xl-bold {
+		@apply text-xl leading-8 font-bold;
+	}
 
-  .text-fh-2xl {
-    @apply text-2xl;
-  }
+	.text-fh-2xl {
+		@apply text-2xl;
+	}
 
-  .text-fh-2xl-mid {
-    @apply text-2xl font-medium;
-  }
+	.text-fh-2xl-mid {
+		@apply text-2xl font-medium;
+	}
 
-  .text-fh-2xl-semi {
-    @apply text-2xl font-semibold;
-  }
+	.text-fh-2xl-semi {
+		@apply text-2xl font-semibold;
+	}
 
-  .text-fh-2xl-bold {
-    @apply text-2xl font-bold;
-  }
+	.text-fh-2xl-bold {
+		@apply text-2xl font-bold;
+	}
 
-  .text-fh-3xl {
-    @apply text-3xl leading-10;
-  }
+	.text-fh-3xl {
+		@apply text-3xl leading-10;
+	}
 
-  .text-fh-3xl-mid {
-    @apply text-3xl leading-10 font-medium;
-  }
+	.text-fh-3xl-mid {
+		@apply text-3xl leading-10 font-medium;
+	}
 
-  .text-fh-3xl-semi {
-    @apply text-3xl leading-10 font-semibold;
-  }
+	.text-fh-3xl-semi {
+		@apply text-3xl leading-10 font-semibold;
+	}
 
-  .text-fh-3xl-bold {
-    @apply text-3xl leading-10 font-bold;
-  }
+	.text-fh-3xl-bold {
+		@apply text-3xl leading-10 font-bold;
+	}
 
-  .text-fh-4xl {
-    @apply text-4xl leading-[2.75rem];
-  }
+	.text-fh-4xl {
+		@apply text-4xl leading-[2.75rem];
+	}
 
-  .text-fh-4xl-mid {
-    @apply text-4xl leading-[2.75rem] font-medium;
-  }
+	.text-fh-4xl-mid {
+		@apply text-4xl leading-[2.75rem] font-medium;
+	}
 
-  .text-fh-4xl-semi {
-    @apply text-4xl leading-[2.75rem] font-semibold;
-  }
+	.text-fh-4xl-semi {
+		@apply text-4xl leading-[2.75rem] font-semibold;
+	}
 
-  .text-fh-4xl-bold {
-    @apply text-4xl leading-[2.75rem] font-bold;
-  }
+	.text-fh-4xl-bold {
+		@apply text-4xl leading-[2.75rem] font-bold;
+	}
 
-  .text-fh-5xl {
-    @apply text-5xl leading-[3.5rem];
-  }
+	.text-fh-5xl {
+		@apply text-5xl leading-[3.5rem];
+	}
 
-  .text-fh-5xl-mid {
-    @apply text-5xl leading-[3.5rem] font-medium;
-  }
+	.text-fh-5xl-mid {
+		@apply text-5xl leading-[3.5rem] font-medium;
+	}
 
-  .text-fh-5xl-semi {
-    @apply text-5xl leading-[3.5rem] font-semibold;
-  }
+	.text-fh-5xl-semi {
+		@apply text-5xl leading-[3.5rem] font-semibold;
+	}
 
-  .text-fh-5xl-bold {
-    @apply text-5xl leading-[3.5rem] font-bold;
-  }
+	.text-fh-5xl-bold {
+		@apply text-5xl leading-[3.5rem] font-bold;
+	}
 
-  .text-fh-6xl {
-    @apply text-[4rem] leading-[4.5rem];
-  }
+	.text-fh-6xl {
+		@apply text-[4rem] leading-[4.5rem];
+	}
 
-  .text-fh-6xl-mid {
-    @apply text-[4rem] leading-[4.5rem] font-medium;
-  }
+	.text-fh-6xl-mid {
+		@apply text-[4rem] leading-[4.5rem] font-medium;
+	}
 
-  .text-fh-6xl-semi {
-    @apply text-[4rem] leading-[4.5rem] font-semibold;
-  }
+	.text-fh-6xl-semi {
+		@apply text-[4rem] leading-[4.5rem] font-semibold;
+	}
 
-  .text-fh-6xl-bold {
-    @apply text-[4rem] leading-[4.5rem] font-bold;
-  }
+	.text-fh-6xl-bold {
+		@apply text-[4rem] leading-[4.5rem] font-bold;
+	}
 
-  /* TYPOGRAPHY ENDS */
+	/* TYPOGRAPHY ENDS */
 
-  /* BUTTONS */
+	/* BUTTONS */
 
   .primary-btn {
     @apply bg-pri-blue rounded-lg py-3 px-6 lg:py-4 lg:px-8 flex items-center justify-center focus:outline-none gap-2 text-sm lg:text-base text-white-fb border-2 border-pri-blue hover:bg-blue-5 hover:border-blue-5 focus:bg-blue-7 active:bg-blue-7 active:border-[#000A1F] disabled:bg-blue-2 disabled:border-blue-2;
@@ -183,59 +183,59 @@
     @apply bg-error rounded-lg py-3 px-6 lg:py-4 lg:px-8 flex items-center justify-center focus:outline-none gap-2 text-sm lg:text-base text-white-fb border-2 border-error hover:bg-error-70 hover:border-error-70 focus:bg-error-70 active:bg-error-80 disabled:bg-error-30 disabled:border-error-30;
   }
 
-  /* INPUTS */
+	/* INPUTS */
 
-  .input-wrap {
-    @apply w-full grid gap-2;
-  }
+	.input-wrap {
+		@apply w-full grid gap-2;
+	}
 
-  .input-wrap>.input-label {
-    @apply text-sm lg:text-base text-bluegray-6;
-  }
+	.input-wrap > .input-label {
+		@apply text-sm lg:text-base text-bluegray-6;
+	}
 
-  .input-wrap.is-focused>.input-label {
-    @apply text-pri-blue;
-  }
+	.input-wrap.is-focused > .input-label {
+		@apply text-pri-blue;
+	}
 
-  .input-wrap.is-disabled>.input-label {
-    @apply text-bluegray-5;
-  }
+	.input-wrap.is-disabled > .input-label {
+		@apply text-bluegray-5;
+	}
 
-  .input-wrap.error>.input-label {
-    @apply text-error;
-  }
+	.input-wrap.error > .input-label {
+		@apply text-error;
+	}
 
-  .input-wrap .input {
-    @apply text-sm lg:text-base text-bluegray-7 py-3 lg:py-4 px-2 rounded-lg border border-bluegray-4 shadow-fh-base;
-  }
+	.input-wrap .input {
+		@apply text-sm lg:text-base text-bluegray-7 py-3 lg:py-4 px-2 rounded-lg border border-bluegray-4 shadow-fh-base;
+	}
 
-  .input-wrap.is-hovered .input {
-    @apply border-bluegray-5 shadow-[0_0_0_2px_#E2E8F0];
-  }
+	.input-wrap.is-hovered .input {
+		@apply border-bluegray-5 shadow-[0_0_0_2px_#E2E8F0];
+	}
 
-  .input-wrap.is-focused .input {
-    @apply outline-[3px] outline-blue-2 border-pri-blue outline-offset-2;
-  }
+	.input-wrap.is-focused .input {
+		@apply outline-[3px] outline-blue-2 border-pri-blue outline-offset-2;
+	}
 
-  .input-wrap.is-disabled .input {
-    @apply border-bluegray-4 bg-[#F8FAFC] text-bluegray-4;
-  }
+	.input-wrap.is-disabled .input {
+		@apply border-bluegray-4 bg-[#F8FAFC] text-bluegray-4;
+	}
 
-  .input-wrap.error .input {
-    @apply border-error shadow-[0_0_0_2px_#F9323230] outline-none;
-  }
+	.input-wrap.error .input {
+		@apply border-error shadow-[0_0_0_2px_#F9323230] outline-none;
+	}
 
-  .password-input {
-    @apply;
-  }
+	.password-input {
+		@apply;
+	}
 
-  /* CONTAINERS */
+	/* CONTAINERS */
 
-  .container-64 {
-    @apply px-4 md:px-8 lg:px-10 xl:px-16 2xl:px-32;
-  }
+	.container-64 {
+		@apply px-4 md:px-8 lg:px-10 xl:px-16 2xl:px-32;
+	}
 
-  .container-108 {
-    @apply px-4 md:px-12 lg:px-16 xl:px-[6.75rem] 2xl:px-40;
-  }
+	.container-108 {
+		@apply px-4 md:px-12 lg:px-16 xl:px-[6.75rem] 2xl:px-40;
+	}
 }

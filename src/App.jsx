@@ -8,6 +8,8 @@ import NoPage from "./pages/NoPage";
 
 function App() {
   return (
+    <>
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,7 +18,8 @@ function App() {
         <Route path="test" element={<FunTestPage />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
+    </>
   );
 }
 
