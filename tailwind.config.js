@@ -2,6 +2,15 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
+    backgroundSize: {
+      '75%': '75%',
+      '100px': '100px'
+    },
+    backgroundPosition: {
+      'right': 'right',
+      'left-center': '60px 110px',
+
+    },
     extend: {
       colors: {
         "pri-blue": "#5270FF",
@@ -69,6 +78,11 @@ export default {
       },
       spacing: {
         authMainHeight: "calc(100vh - 96px)",
+      },
+      backgroundImage: {
+        mission: 'url( "./assets/about-img-1.png")',
+        vision: 'url( "./assets/about-img-2.png")',
+        ellipse: 'url( "./assets/Ellipse-1.png")',
       }
     },
   },
