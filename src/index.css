@@ -186,7 +186,7 @@
   /* INPUTS */
 
   .input-wrap {
-    @apply w-full grid gap-2;
+    @apply w-full grid gap-2 bg-transparent;
   }
 
   .input-wrap>.input-label {
@@ -229,6 +229,30 @@
     @apply;
   }
 
+  .select-with-img-wrap {
+    @apply relative w-[270px] grid gap-2 text-base lg:text-lg text-white py-4 px-8 rounded-lg border border-bluegray-1 hover:border-bluegray-5 focus:outline-2 focus:outline-blue-2 outline-offset-2;
+  }
+
+  .select-with-img-wrap>.input-label {
+    @apply text-sm lg:text-base text-white;
+  }
+
+  .select-with-img-wrap:focus>.input-label {
+    @apply text-pri-blue;
+  }
+
+  .select-with-img-wrap.is-disabled>.input-label {
+    @apply text-bluegray-5;
+  }
+
+  .select-with-img-wrap.error>.input-label {
+    @apply text-error;
+  }
+
+  .select-with-img-wrap .select-with-img {
+    @apply w-full border-none bg-transparent focus:outline-none;
+  }
+
   /* CONTAINERS */
 
   .container-64 {
@@ -237,5 +261,9 @@
 
   .container-108 {
     @apply px-4 md:px-12 lg:px-16 xl:px-[6.75rem] 2xl:px-40;
+  }
+
+  .container-108-36-mob {
+    @apply px-9 md:px-16 xl:px-[6.75rem] 2xl:px-40;
   }
 }
