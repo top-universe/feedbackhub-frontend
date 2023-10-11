@@ -30,7 +30,6 @@ function App() {
         <Route path="email-verification-successful" element={<EmailSuccessful />} />
         <Route path="*" element={<NoPage />} />
 
-
       </Routes>
       </BrowserRouter>
     </>
