@@ -15,44 +15,44 @@ const FAQs = () => {
                         <p>what is feedbackhub</p>
                         <p>-</p>
                     </div>
-                    <p class='py-3 px-4 text-base'>FeedbackHub is an innovative customer feedback management
-                     software designed to help businesses gather, analyze, and manage customer feedback 
-                     effectively. FeedbackHub is designed to serve businesses of all sizes, including
-                      startups, small businesses, and enterprises, looking to enhance 
+                    <p class='py-3 px-4 text-base'>FeedbackHub is an innovative customer feedback
+                     management software designed to help businesses gather, analyze, and 
+                     manage customer feedback effectively. FeedbackHub is designed to serve 
+                     businesses of all sizes, including startups, small businesses, and enterprises, looking to enhance 
                     customer engagement and improve their products and services.
-                    </p>
-                    <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
-                        <p>Is there a free trial available?</p>
-                        <p>-</p>
-                    </div>
-                    <p class='py-3 px-4 text-base'>Yes, we offer a free trial period for 
-                    you to explore FeedbackHub's features and see how it can benefit 
-                    your business. Simply sign up to get started!
                     </p>
                     <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
                         <p>Who can benefit from FeedbackHub?</p>
                         <p>-</p>
                     </div>
-                    <p class='py-3 px-4 text-base'>FeedbackHub is designed to serve businesses of 
-                    all sizes, including startups, small businesses, and enterprises, looking to enhance customer 
+                    <p class='py-3 px-4 text-base'>FeedbackHub is designed to serve businesses of all 
+                    sizes, including startups, small businesses, and enterprises, looking to enhance customer 
                     engagement and improve their products and services.
                     </p>
                     <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
                         <p>Is my feedback data secure with FeedbackHub?</p>
                         <p>-</p>
                     </div>
-                    <p class='py-3 px-4 text-base'>Absolutely. We take data privacy and security 
-                    seriously. Feedback data is encrypted, and we follow 
+                    <p class='py-3 px-4 text-base'>Absolutely. We take data privacy and security seriously. 
+                    Feedback data is encrypted, and we follow 
                     industry best practices to protect your information.
                     </p>
                     <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
+                        <p>Can I see the feedback I've submitted in the past?</p>
+                        <p>-</p>
+                    </div>
+                    <p class='py-3 px-4 text-base'>Yes, you can access your feedback history 
+                    in your account dashboard, which includes a 
+                    record of the feedback you've submitted and its status.
+                    </p>
+                    {/* <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
                         <p>Can I customize the feedback forms to match my brand identity?</p>
                         <p>-</p>
                     </div>
                     <p class='py-3 px-4 text-base'>Absolutely! FeedbackHub offers customization 
                     options to tailor feedback forms and surveys according to your brand's unique identity, 
                     ensuring a consistent and personalized user experience.
-                    </p>
+                    </p> */}
                 </div>
             </div>
             <div class='col-span-1 hidden md:block'>

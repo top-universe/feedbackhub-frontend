@@ -1,38 +1,35 @@
 import DestructiveButton from "../../components/Button/DestructiveButton"
 import PrimaryButton from "../../components/Button/PrimaryButton";
 import SecondaryButton from "../../components/Button/SecondaryButton";
-import background from '../../assets/images/background.png'
-import form from '../../assets/images/form.png'
-import abstract from '../../assets/images/abstract.png'
+import man from '../../assets/images/man.png'
+// import background from '../../assets/images/background.png'
+// import form from '../../assets/images/form.png'
+// import abstract from '../../assets/images/abstract.png'
 
 const GetStarted = () => {
 
     return (
-        <section  style={{ backgroundImage: `url(${background})`,paddingTop:'50px',marginTop:'50px' }}>
-            {/* <img src={background}  alt='logo'/> */}
-
-            <div className="  grid place-items-center mt-7 relative sm:mx-6  " >
-                <div className='bg-pri-blue py-8 sm:mx-48  mb-0 mb-28 container-64 md:container-108 fh-inner rounded-xl text-center relative '>
-                    <p class=' text-white-f9 mb-6 mt-5 text-fh-sm md:text-fh-base'>GET STARTED WITH FEEDBACK HUB FOR FREE</p>
-                    <p class='text-bluegray-9 text-fh-2xl-semi md:text-fh-4xl-semi'>Ready to Take Your Business </p>
-                    <p class='text-bluegray-9 text-fh-2xl-semi md:text-fh-4xl-semi'> to the Next Level?</p>
-                    
-                    <p class='text-blue-2 text-fh-xs-mid md:text-fh-sm-mid mt-9'>Collect, Manage, and Analyze Customer
-                        Feedback for Better Business 
-                    </p>
-                    <p class='text-blue-2 text-fh-xs-mid md:text-fh-sm-mid mb-8 '> Insights Feedback for Better Business Insights</p>
-                   
-                   
-                    <img class=' absolute bottom-0 right-0 w-64 h-52' src={form} alt="pic" />
-                    {/* <button class='rounded-xl white-f9'>get started</button> */}
-                     <PrimaryButton text='get started'/>
-                     {/* <SecondaryButton text='get started'/> */}
-                     {/* <DestructiveButton text='get stared'/> */}
-                
+        <section  class='bg-yellow-1 container-64 md:container-108 my-11 grid grid-cols-1 md:grid-cols-2 md:gap-20 '>
+            <div >
+                <div class='text-center'>
+                    <span class=' text-bluegray-9 mt-3.5 text-fh-3xl-bold md:text-fh-5xl-bold inline md:block' >Ready to </span>
+                    <span class='text-pri-blue text-fh-3xl-bold md:text-fh-5xl-bold inline mb:block'> get started</span>
                 </div>
-                <img class=' absolute bottom-14 right-12 h-52 w-64 z-50' src={abstract} alt='picture'/>
+                <p class='text-grey-4f  text-fh-base-mid md:text-fh-lg-mid mt-3.5' >Explore the product further, or create an account
+                     now and start sharing your feedback to make a
+                     difference in the products and services you use every day!
+                </p>
+                <div class='flex gap-7 mt-7 mb-11 place-content-center'>
+                    <SecondaryButton text='Login' />
+                    <PrimaryButton text='Get Started' />
+                </div>
                 
             </div>
+            <div class='order-first md:order-last my-7'>
+                <img src={man} alt='man'/>
+            </div>
+
+            
             
         </section>
     )
