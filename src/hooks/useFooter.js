@@ -23,9 +23,5 @@ export default function useFooter() {
         getCountries();
     }, [])
 
-    useEffect(() => {
-        if (countries.length) console.log(countries);
-    }, [countries])
-
     return { countries, countryVal, changeCountry }
 }

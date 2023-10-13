@@ -10,7 +10,7 @@ export default function useHeader() {
     const closeMenu = () => setMenuIsOpen(false);
 
     const navLinkClasses = () => {
-        return `text-fh-base lg:text-fh-lg text-bluegray-9 hover:text-pri-blue`
+        return `text-fh-base lg:text-fh-sm xl:text-fh-lg text-bluegray-9 hover:text-pri-blue`
     }
 
     const recalibrateScreenWidth = useCallback(() => {

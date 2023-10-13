@@ -18,7 +18,7 @@ const Footer = () => {
             <img src={logo} alt="" className="w-max" />
           </Link>
         </div>
-        <div className="w-full gap-x-24 md:gap-x-20 gap-y-10 lg:gap-y-16 flex flex-wrap md:grid md:grid-cols-[1fr_1fr] lg:grid-cols-[260px_1fr_1fr_1fr] xl:grid-cols-[260px_1fr_1fr_1fr_1fr]">
+        <div className="w-full gap-x-24 md:gap-x-20 gap-y-10 lg:gap-y-16 flex flex-wrap md:grid md:grid-cols-[1fr_1fr] lg:grid-cols-[260px_1fr_1fr] xl:grid-cols-[260px_1fr_1fr_1fr_1fr]">
           <div className="max-w-max flex-none hidden lg:grid gap-6 col-span-2 md:col-span-4 lg:col-span-1">
             <Link to="/" className="text-decoration-none ">
               <img src={logo} alt="" className="w-max" />
