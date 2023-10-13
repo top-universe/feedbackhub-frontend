@@ -78,6 +78,7 @@ export default {
       },
       spacing: {
         authMainHeight: "calc(100vh - 96px)",
+        cont1350: "calc((100% - 1350px) / 2)"
       },
       backgroundImage: {
         mission: 'url( "./assets/about-img-1.png")',
