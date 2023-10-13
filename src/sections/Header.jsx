@@ -19,22 +19,22 @@ const Header = () => {
           </Link>
           <nav className='w-fit hidden lg:block'>
             <ul className='w-max flex gap-4 list-none'>
-              <li className='w-max py-2 px-4'>
+              <li className='w-max py-2 px-1 xl:px-4'>
                 <NavLink to="#" className={navLinkClasses}>
                   Write Review
                 </NavLink>
               </li>
-              <li className='w-max py-2 px-4'>
+              <li className='w-max py-2 px-1 xl:px-4'>
                 <NavLink to="#" className={navLinkClasses}>
                   Categories
                 </NavLink>
               </li>
-              <li className='w-max py-2 px-4'>
+              <li className='w-max py-2 px-1 xl:px-4'>
                 <NavLink to="#" className={navLinkClasses}>
                   Integrations
                 </NavLink>
               </li>
-              <li className='w-max py-2 px-4'>
+              <li className='w-max py-2 px-1 xl:px-4'>
                 <NavLink to="#" className={navLinkClasses}>
                   For Business
                 </NavLink>
