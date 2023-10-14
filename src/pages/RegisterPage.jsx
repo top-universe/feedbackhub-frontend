@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import AuthLayout from "../layouts/AuthLayout";
+import AuthLayoutAlt from "../layouts/AuthLayoutAlt";
 
 const RegisterPage = () => {
 
     return (
-        <AuthLayout>
-            <p className="w-full md:w-[400px] h-fit lg:text-center">
+        <AuthLayoutAlt>
+            <p className="w-[400px] h-fit lg:text-center">
                 Register Page. Try
                 <span> </span>
                 <Link to="/auth/login" className="no-underline text-pri-blue hover:underline">Log in</Link>
             </p>
-        </AuthLayout>
+        </AuthLayoutAlt>
     )
 }
 

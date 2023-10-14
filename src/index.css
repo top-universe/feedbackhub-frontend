@@ -171,17 +171,17 @@
 
 	/* BUTTONS */
 
-  .primary-btn {
-    @apply bg-pri-blue rounded-lg py-3 px-6 lg:py-4 lg:px-8 flex items-center justify-center focus:outline-none gap-2 text-sm lg:text-base text-white-fb border-2 border-pri-blue hover:bg-blue-5 hover:border-blue-5 focus:bg-blue-7 active:bg-blue-7 active:border-[#000A1F] disabled:bg-blue-2 disabled:border-blue-2;
-  }
+	.primary-btn {
+		@apply bg-pri-blue rounded-lg py-4 px-8 flex items-center justify-center focus:outline-none gap-2 text-base text-white-fb border-2 border-pri-blue hover:bg-blue-5 hover:border-blue-5 focus:bg-blue-7 active:bg-blue-7 active:border-[#000A1F] disabled:bg-blue-2 disabled:border-blue-2;
+	}
 
-  .secondary-btn {
-    @apply bg-transparent rounded-lg py-3 px-6 lg:py-4 lg:px-8 flex items-center justify-center focus:outline-none gap-2 text-sm lg:text-base text-pri-blue border-2 border-pri-blue hover:bg-blue-2 focus:bg-blue-3 active:bg-blue-2 active:border-blue-7 disabled:text-blue-3 disabled:border-blue-2;
-  }
+	.secondary-btn {
+		@apply bg-transparent rounded-lg py-4 px-8 flex items-center justify-center focus:outline-none gap-2 text-base text-pri-blue border-2 border-pri-blue hover:bg-blue-2 focus:bg-blue-3 active:bg-blue-2 active:border-blue-7 disabled:text-blue-3 disabled:border-blue-2;
+	}
 
-  .destructive-btn {
-    @apply bg-error rounded-lg py-3 px-6 lg:py-4 lg:px-8 flex items-center justify-center focus:outline-none gap-2 text-sm lg:text-base text-white-fb border-2 border-error hover:bg-error-70 hover:border-error-70 focus:bg-error-70 active:bg-error-80 disabled:bg-error-30 disabled:border-error-30;
-  }
+	.destructive-btn {
+		@apply bg-error rounded-lg py-4 px-8 flex items-center justify-center focus:outline-none gap-2 text-base text-white-fb border-2 border-error hover:bg-error-70 hover:border-error-70 focus:bg-error-70 active:bg-error-80 disabled:bg-error-30 disabled:border-error-30;
+	}
 
 	/* INPUTS */
 
@@ -238,4 +238,18 @@
 	.container-108 {
 		@apply px-4 md:px-12 lg:px-16 xl:px-[6.75rem] 2xl:px-40;
 	}
+}
+.business {
+	background: url("./assets/Ellipse-1.png");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: 60px 110px;
+}
+.vision,
+.mission {
+	background-size: 75%;
+	background-position: left;
+}
+.mission {
+	background-position: right;
 }
