@@ -1,73 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@layer components {
+	/* TYPOGRAPHY */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	.text-fh-xs {
+		@apply text-xs;
+	}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+	.text-fh-xs-mid {
+		@apply text-xs font-medium;
+	}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+	.text-fh-xs-semi {
+		@apply text-xs font-semibold;
+	}
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+	.text-fh-xs-bold {
+		@apply text-xs font-bold;
+	}
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+	.text-fh-sm {
+		@apply text-sm;
+	}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+	.text-fh-sm-mid {
+		@apply text-sm font-medium;
+	}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+	.text-fh-sm-semi {
+		@apply text-sm font-semibold;
+	}
+
+	.text-fh-sm-bold {
+		@apply text-sm font-bold;
+	}
+
+	.text-fh-base {
+		@apply text-base;
+	}
+
+	.text-fh-base-mid {
+		@apply text-base font-medium;
+	}
+
+	.text-fh-base-semi {
+		@apply text-base font-semibold;
+	}
+
+	.text-fh-base-bold {
+		@apply text-base font-bold;
+	}
+
+	.text-fh-lg {
+		@apply text-lg;
+	}
+
+	.text-fh-lg-mid {
+		@apply text-lg font-medium;
+	}
+
+	.text-fh-lg-semi {
+		@apply text-lg font-semibold;
+	}
+
+	.text-fh-lg-bold {
+		@apply text-lg font-bold;
+	}
+
+	.text-fh-xl {
+		@apply text-xl leading-8;
+	}
+
+	.text-fh-xl-mid {
+		@apply text-xl leading-8 font-medium;
+	}
+
+	.text-fh-xl-semi {
+		@apply text-xl leading-8 font-semibold;
+	}
+
+	.text-fh-xl-bold {
+		@apply text-xl leading-8 font-bold;
+	}
+
+	.text-fh-2xl {
+		@apply text-2xl;
+	}
+
+	.text-fh-2xl-mid {
+		@apply text-2xl font-medium;
+	}
+
+	.text-fh-2xl-semi {
+		@apply text-2xl font-semibold;
+	}
+
+	.text-fh-2xl-bold {
+		@apply text-2xl font-bold;
+	}
+
+	.text-fh-3xl {
+		@apply text-3xl leading-10;
+	}
+
+	.text-fh-3xl-mid {
+		@apply text-3xl leading-10 font-medium;
+	}
+
+	.text-fh-3xl-semi {
+		@apply text-3xl leading-10 font-semibold;
+	}
+
+	.text-fh-3xl-bold {
+		@apply text-3xl leading-10 font-bold;
+	}
+
+	.text-fh-4xl {
+		@apply text-4xl leading-[2.75rem];
+	}
+
+	.text-fh-4xl-mid {
+		@apply text-4xl leading-[2.75rem] font-medium;
+	}
+
+	.text-fh-4xl-semi {
+		@apply text-4xl leading-[2.75rem] font-semibold;
+	}
+
+	.text-fh-4xl-bold {
+		@apply text-4xl leading-[2.75rem] font-bold;
+	}
+
+	.text-fh-5xl {
+		@apply text-5xl leading-[3.5rem];
+	}
+
+	.text-fh-5xl-mid {
+		@apply text-5xl leading-[3.5rem] font-medium;
+	}
+
+	.text-fh-5xl-semi {
+		@apply text-5xl leading-[3.5rem] font-semibold;
+	}
+
+	.text-fh-5xl-bold {
+		@apply text-5xl leading-[3.5rem] font-bold;
+	}
+
+	.text-fh-6xl {
+		@apply text-[4rem] leading-[4.5rem];
+	}
+
+	.text-fh-6xl-mid {
+		@apply text-[4rem] leading-[4.5rem] font-medium;
+	}
+
+	.text-fh-6xl-semi {
+		@apply text-[4rem] leading-[4.5rem] font-semibold;
+	}
+
+	.text-fh-6xl-bold {
+		@apply text-[4rem] leading-[4.5rem] font-bold;
+	}
+
+	/* TYPOGRAPHY ENDS */
+
+	/* BUTTONS */
+
+	.primary-btn {
+		@apply bg-pri-blue rounded-lg py-4 px-8 flex items-center justify-center focus:outline-none gap-2 text-base text-white-fb border-2 border-pri-blue hover:bg-blue-5 hover:border-blue-5 focus:bg-blue-7 active:bg-blue-7 active:border-[#000A1F] disabled:bg-blue-2 disabled:border-blue-2;
+	}
+
+	.secondary-btn {
+		@apply bg-transparent rounded-lg py-4 px-8 flex items-center justify-center focus:outline-none gap-2 text-base text-pri-blue border-2 border-pri-blue hover:bg-blue-2 focus:bg-blue-3 active:bg-blue-2 active:border-blue-7 disabled:text-blue-3 disabled:border-blue-2;
+	}
+
+	.destructive-btn {
+		@apply bg-error rounded-lg py-4 px-8 flex items-center justify-center focus:outline-none gap-2 text-base text-white-fb border-2 border-error hover:bg-error-70 hover:border-error-70 focus:bg-error-70 active:bg-error-80 disabled:bg-error-30 disabled:border-error-30;
+	}
+
+	/* INPUTS */
+
+	.input-wrap {
+		@apply w-full grid gap-2;
+	}
+
+	.input-wrap > .input-label {
+		@apply text-sm lg:text-base text-bluegray-6;
+	}
+
+	.input-wrap.is-focused > .input-label {
+		@apply text-pri-blue;
+	}
+
+	.input-wrap.is-disabled > .input-label {
+		@apply text-bluegray-5;
+	}
+
+	.input-wrap.error > .input-label {
+		@apply text-error;
+	}
+
+	.input-wrap .input {
+		@apply text-sm lg:text-base text-bluegray-7 py-3 lg:py-4 px-2 rounded-lg border border-bluegray-4 shadow-fh-base;
+	}
+
+	.input-wrap.is-hovered .input {
+		@apply border-bluegray-5 shadow-[0_0_0_2px_#E2E8F0];
+	}
+
+	.input-wrap.is-focused .input {
+		@apply outline-[3px] outline-blue-2 border-pri-blue outline-offset-2;
+	}
+
+	.input-wrap.is-disabled .input {
+		@apply border-bluegray-4 bg-[#F8FAFC] text-bluegray-4;
+	}
+
+	.input-wrap.error .input {
+		@apply border-error shadow-[0_0_0_2px_#F9323230] outline-none;
+	}
+
+	.password-input {
+		@apply;
+	}
+
+	/* CONTAINERS */
+
+	.container-64 {
+		@apply px-4 md:px-8 lg:px-10 xl:px-16 2xl:px-32;
+	}
+
+	.container-108 {
+		@apply px-4 md:px-12 lg:px-16 xl:px-[6.75rem] 2xl:px-40;
+	}
+}
+.business {
+	background: url("./assets/Ellipse-1.png");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: 60px 110px;
+}
+.vision,
+.mission {
+	background-size: 75%;
+	background-position: left;
+}
+.mission {
+	background-position: right;
 }

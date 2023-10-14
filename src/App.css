@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.scroll-side {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    grid-gap: 10px;
+    gap: 10px;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 0 auto;
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+.side {
+  width: 330px;
+}
+  
+  .scroll-side::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .scroll-side::-webkit-scrollbar-thumb,
+  .scroll-side::-webkit-scrollbar-thumb:hover {
+    background: hsla(0, 0%, 9%, 0.514);
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .width-330 {
+    width: 1320px;
+  }
 
-.read-the-docs {
-  color: #888;
-}
+  .scroll-sideway {
+    /* max-width: 600px; */
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    gap: 10px;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .scroll-sideway::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+  }
+  
+  .scroll-sideway::-webkit-scrollbar-thumb,
+  .scroll-sideway::-webkit-scrollbar-thumb:hover {
+    background: hsla(0, 0%, 9%, 0.514);
+  }
+
+  .width-330 {
+    width: 1320px;
+  }
+
+
+
+
+
+  
