@@ -70,7 +70,7 @@ export const footerLinksData = [
         links: [
             {
                 text: "Home",
-                link: "#"
+                link: "/business"
             },
             {
                 text: "Business login",

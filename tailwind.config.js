@@ -52,6 +52,9 @@ export default {
         "grey-4f": "#444F5F",
         "grey-d9": "#D9D9D9",
 
+        "subtext": "#444F5F",
+        "text": "#1E293B",
+
         "black-0a": "#0A0A0A",
         "black-0a-50": "#0A0A0A50",
 
