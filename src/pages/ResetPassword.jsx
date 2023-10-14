@@ -1,6 +1,6 @@
 import AuthLayout from "../layouts/AuthLayout";
 import Input from '../components/Input/Input';
-import PrimaryButton from '../components/button/PrimaryButton';
+import PrimaryButton from '../components/Button/PrimaryButton';
 import checkCircleIcon from '../assets/icons/check-circle.svg';
 
 

@@ -1,7 +1,7 @@
 import AuthLayout from "../layouts/AuthLayout";
 import { Link } from "react-router-dom";
 import Input from '../components/Input/Input';
-import PrimaryButton from '../components/button/PrimaryButton';
+import PrimaryButton from '../components/Button/PrimaryButton';
 
 const BottomChild = () => (
   <div className="text-center lg:mt-8">
