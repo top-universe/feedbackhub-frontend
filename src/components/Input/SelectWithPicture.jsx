@@ -83,7 +83,7 @@ const SelectWithPicture = ({
                 >
                     {optionsArray.length ? (
                         optionsArray.map((item) => (
-                            <option key={uuid()} value={item.value}>{item.text}</option>
+                            <option key={uuid()} value={item.value} className="bg-bluegray-9 text-white">{item.text}</option>
                         ))
                     ) : null}
                 </select>

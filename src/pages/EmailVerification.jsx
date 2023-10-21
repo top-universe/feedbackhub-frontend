@@ -1,9 +1,9 @@
 import AuthLayout from "../layouts/AuthLayout";
 import { Link } from "react-router-dom";
-// import Input from '../components/Input/Input';
-import PrimaryButton from "../components/Button/PrimaryButton";
+import Input from "../components/Input/Input";
+import PrimaryButton from "../components/button/PrimaryButton";
+import checkCircleIcon from "../assets/icons/check-circle.svg";
 import SecondaryButton from "../components/Button/SecondaryButton";
-// import checkCircleIcon from '../assets/icons/check-circle.svg';
 
 const EmailVerification = () => {
   return (
@@ -27,12 +27,12 @@ const EmailVerification = () => {
             type="button"
             text="Go to Gmail inbox"
             fullWidth={true}
-            styles={{ paddingBlock: "0.5rem" }}
+            // styles={{ paddingBlock: "0.5rem" }}
           />
           <SecondaryButton
             type="button"
             text="Resend Verification Email"
-            styles={{ paddingBlock: "0.5rem" }}
+            // styles={{ paddingBlock: "0.5rem" }}
           />
         </div>
       </div>
