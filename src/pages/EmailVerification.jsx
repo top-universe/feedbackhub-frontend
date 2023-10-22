@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Input from "../components/Input/Input";
 import PrimaryButton from "../components/button/PrimaryButton";
 import checkCircleIcon from "../assets/icons/check-circle.svg";
-import SecondaryButton from "../components/Button/SecondaryButton";
+import SecondaryButton from "../components/button/SecondaryButton";
 
 const EmailVerification = () => {
   return (
