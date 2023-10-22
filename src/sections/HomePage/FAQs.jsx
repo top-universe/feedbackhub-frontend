@@ -1,67 +1,60 @@
-import question from '../../assets/images/question.png'
+import React, { useState } from "react";
+import question from "../../assets/images/question.png";
+import QuestionAnswer from "../../components/QuestionAnswer";
+import { faqData } from "../../data/faqData";
 const FAQs = () => {
+  const [openIndexes, setOpenIndexes] = useState(
+    faqData.map((_, index) => index)
+  );
 
-    return (
-        <section class="container-64 md:container-108 bg-white grid md:grid-cols-4">
-            <div class='md:col-span-3' >
-                <div class='mb-10'>
-                    <h1 class='font-bold text-xl md:text-3xl mb-1'>Frequently Asked Questions</h1>
-                    <p class='text-sm'>Got a question? We're here to answer! 
-                    f you.</p>
-                    <p class='text-sm'>don't see your question here, drop us a line on our <a href="#">contact page</a></p>
-                </div>
-                <div>
-                    <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
-                        <p>what is feedbackhub</p>
-                        <p>-</p>
-                    </div>
-                    <p class='py-3 px-4 text-base'>FeedbackHub is an innovative customer feedback
-                     management software designed to help businesses gather, analyze, and 
-                     manage customer feedback effectively. FeedbackHub is designed to serve 
-                     businesses of all sizes, including startups, small businesses, and enterprises, looking to enhance 
-                    customer engagement and improve their products and services.
-                    </p>
-                    <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
-                        <p>Who can benefit from FeedbackHub?</p>
-                        <p>-</p>
-                    </div>
-                    <p class='py-3 px-4 text-base'>FeedbackHub is designed to serve businesses of all 
-                    sizes, including startups, small businesses, and enterprises, looking to enhance customer 
-                    engagement and improve their products and services.
-                    </p>
-                    <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
-                        <p>Is my feedback data secure with FeedbackHub?</p>
-                        <p>-</p>
-                    </div>
-                    <p class='py-3 px-4 text-base'>Absolutely. We take data privacy and security seriously. 
-                    Feedback data is encrypted, and we follow 
-                    industry best practices to protect your information.
-                    </p>
-                    <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
-                        <p>Can I see the feedback I've submitted in the past?</p>
-                        <p>-</p>
-                    </div>
-                    <p class='py-3 px-4 text-base'>Yes, you can access your feedback history 
-                    in your account dashboard, which includes a 
-                    record of the feedback you've submitted and its status.
-                    </p>
-                    {/* <div class='flex justify-start md:justify-between text-lg mb-3 bg-bluegray-2 py-3 px-4'>
-                        <p>Can I customize the feedback forms to match my brand identity?</p>
-                        <p>-</p>
-                    </div>
-                    <p class='py-3 px-4 text-base'>Absolutely! FeedbackHub offers customization 
-                    options to tailor feedback forms and surveys according to your brand's unique identity, 
-                    ensuring a consistent and personalized user experience.
-                    </p> */}
-                </div>
-            </div>
-            <div class='col-span-1 hidden md:block'>
-                <img  src={question} alt="pic"  />  
-            </div>
-            
+  const toggleQuestion = (index) => {
+    if (openIndexes.includes(index)) {
+      setOpenIndexes(openIndexes.filter((i) => i !== index));
+    } else {
+      setOpenIndexes([...openIndexes, index]);
+    }
+  };
+  return (
+    <section className="container-64 md:container-108 bg-white flex gap-[90px] py-8 lg:pb-4">
+      <div className="lg:mt-[115px]">
+        <div className="mb-8 lg:mb-20">
+          <h1 className="text-fh-2xl-bold lg:text-fh-5xl-bold mb-2 lg:mb-1">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-fh-sm lg:text-fh-lg">
+            Got a question? We're here to answer! f you.
+          </p>
+          <p className="text-fh-sm lg:text-fh-lg">
+            don't see your question here, drop us a line on our{" "}
+            <a href="#" className="underline text-pri-blue">
+              contact page
+            </a>
+          </p>
+        </div>
 
-        </section>
-    )
-}
+        <div className="grid gap-6">
+          {faqData.map((item, idx) => (
+            <QuestionAnswer
+              key={`faq-${idx}`}
+              question={item.question}
+              answer={item.answer}
+              isOpen={openIndexes.includes(idx)}
+              toggleOpen={() => toggleQuestion(idx)}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="hidden md:block">
+        <img
+          src={question}
+          alt="pic"
+          width={"350px"}
+          height={"350px"}
+          className="md:max-w-[150px] lg:max-w-[350px]"
+        />
+      </div>
+    </section>
+  );
+};
 
 export default FAQs;
