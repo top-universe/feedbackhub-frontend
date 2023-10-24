@@ -44,3 +44,40 @@ function App() {
 
 export default App;
 
+
+
+.fade-svg {
+	animation: fadeEffect 2s linear infinite;
+  }
+  
+  @keyframes fadeEffect {
+	0% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  .curve{
+	border-radius: 0px 0px 64px 64px;
+background: var(--Primary, #5270FF);
+  }
+
+  .bullet-point {
+	display: flex;
+	align-items: center;
+  }
+  
+
+
+
+
+
+
+
+
+
