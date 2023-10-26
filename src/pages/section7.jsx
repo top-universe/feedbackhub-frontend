@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
+
 import image1 from '../assets/imagep1.png';
 import image2 from '../assets/imagep2.png';
 import image3 from '../assets/imagep3.png';
@@ -16,6 +17,7 @@ import image9 from '../assets/imagep9.png';
 
 const Section7 = () => {
   return (
+    
               <div className="bg-blue-500  rounded-bl-[40px] rounded-br-[40px] mx-auto">
           <div className=" p-4 mx-auto lg:w-1440 lg:h-633.912 lg:flex-shrink-0 ">
             <div className="text-center  pt-0 px-0">
@@ -98,7 +100,8 @@ const Section7 = () => {
             See all integrations
             </button>
             </div>
-              </div>
+            </div>
+              
 
 
          
