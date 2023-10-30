@@ -2,7 +2,8 @@ import React from "react";
 import CheckCircle from "../assets/icons/check-circle.svg";
 import AuthLayout from "../layouts/AuthLayout";
 import PropTypes from "prop-types";
-import PrimaryButton from "./button/PrimaryButton";
+import PrimaryButton from "./Button/PrimaryButton";
+import AuthLayout from './../layouts/AuthLayout';
 
 const AuthSucccess = ({
   title,
