@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import checked from "../../assets/checked.png";
 import businessImg from "../../assets/business-img.png";
 import Ellipse2 from "../../assets/Ellipse-2.png";
-import PrimaryButton from "../../components/button/PrimaryButton";
-import SecondaryButton from "../../components/button/SecondaryButton";
+import SecondaryButton from "./../../components/Button/SecondaryButton";
+import PrimaryButton from "./../../components/Button/PrimaryButton";
 const OwnABusiness = () => {
   return (
     <section className="container-108 bg-white py-16 grid md:grid-cols-2 overflow-hidden md:gap-16 ">
