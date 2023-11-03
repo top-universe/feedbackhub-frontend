@@ -3,60 +3,62 @@ import visionImg from "../../assets/img-mission.png";
 import missionImg from "../../assets/img-vision.png";
 
 const AboutUs = () => {
-	return (
-		<section className="container-108 bg-white pt-36 pb-52 ">
-			<h2 className="text-center font-bold md:text-4xl text-3xl text-bluegray-9 mb-8 font-outfit">
-				About Us
-			</h2>
-			<div className="md:bg-mission w-full md:py-16 bg-no-repeat bg-75% bg-left   flex items-center md:justify-end justify-center mb-11 ">
-				<About
-					heading={"Our Vision"}
-					img={visionImg}
-					alt={"two hands shaking each other"}>
-					Our vision is to create a world where feedback is valued and acted
-					upon, fostering continuos improvement and mutual understanding between
-					users and businesses. Together, we can shape a feedback-driven culture
-					that drives positive change.
-				</About>
-			</div>
-			<div className="md:bg-vision w-full md:py-16 bg-no-repeat bg-75% bg-right flex items-center md:justify-start justify-center">
-				<About
-					heading={"Our Mission"}
-					img={missionImg}
-					alt={
-						"two ladies and a gentlemen discussing round the table with two laptops on the table"
-					}>
-					Our mission is to simplify the feedback process and empower both users
-					and business owners to share their thoughts and experience easily.
-					Together, we can drive positive change and enhance the relationship
-					between consumers and businesses.
-				</About>
-			</div>
-		</section>
-	);
+  return (
+    <section className="container-108 bg-white py-8 lg:pt-36 lg:pb-52 ">
+      <h2 className="text-center font-bold md:text-4xl text-3xl text-bluegray-9 mb-8 font-outfit">
+        About Us
+      </h2>
+      <div className="md:bg-mission w-full md:py-16 bg-no-repeat bg-75% bg-left   flex items-center md:justify-end justify-center mb-11 ">
+        <About
+          heading={"Our Vision"}
+          img={visionImg}
+          alt={"two hands shaking each other"}
+        >
+          Our vision is to create a world where feedback is valued and acted
+          upon, fostering continuos improvement and mutual understanding between
+          users and businesses. Together, we can shape a feedback-driven culture
+          that drives positive change.
+        </About>
+      </div>
+      <div className="md:bg-vision w-full md:py-16 bg-no-repeat bg-75% bg-right flex items-center md:justify-start justify-center">
+        <About
+          heading={"Our Mission"}
+          img={missionImg}
+          alt={
+            "two ladies and a gentlemen discussing round the table with two laptops on the table"
+          }
+        >
+          Our mission is to simplify the feedback process and empower both users
+          and business owners to share their thoughts and experience easily.
+          Together, we can drive positive change and enhance the relationship
+          between consumers and businesses.
+        </About>
+      </div>
+    </section>
+  );
 };
 
 const About = ({ heading, children, img, alt }) => {
-	return (
-		<article className="max-w-[31rem] bg-bluegray-2 px-6 py-6 rounded-md text-center ">
-			<div>
-				<h3 className="text-pri-blue lg:text-fh-3xl-bold text-fh-2xl-bold  mb-3">
-					{heading}
-				</h3>
-				<p className="lg:text-fh-xl text-fh-base text-black-0a font-outfit mt-6 mb-6 md:mb-0 w-full">
-					{children}
-				</p>
-			</div>
-			<img src={img} alt={alt} className="md:hidden" />
-		</article>
-	);
+  return (
+    <article className="max-w-[31rem] bg-bluegray-2 px-6 py-6 rounded-md text-center ">
+      <div>
+        <h3 className="text-pri-blue lg:text-fh-3xl-bold text-fh-2xl-bold  mb-3">
+          {heading}
+        </h3>
+        <p className="lg:text-fh-xl text-fh-base text-black-0a font-outfit mt-6 mb-6 md:mb-0 w-full">
+          {children}
+        </p>
+      </div>
+      <img src={img} alt={alt} className="md:hidden" />
+    </article>
+  );
 };
 
 About.propTypes = {
-	heading: PropTypes.string,
-	children: PropTypes.string,
-	alt: PropTypes.string,
-	img: PropTypes.string,
+  heading: PropTypes.string,
+  children: PropTypes.string,
+  alt: PropTypes.string,
+  img: PropTypes.string,
 };
 
 export default AboutUs;

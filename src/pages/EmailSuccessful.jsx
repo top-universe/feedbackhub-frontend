@@ -1,17 +1,16 @@
-import AuthLayout from "../layouts/AuthLayout";
-import { Link } from "react-router-dom";
-import Input from '../components/Input/Input'; 
-import PrimaryButton from '../components/button/PrimaryButton'; 
-import checkCircleIcon from '../assets/icons/check-circle.svg';
-
+import React from "react";
+import AuthSucccess from "../components/AuthSuccess";
 
 const EmailSuccessful = () => {
   return (
-    <AuthLayout>
-
-        
-      </AuthLayout>
-  )
+    <AuthSucccess
+      title={"Email verification successful"}
+      descriptionStart={"Your email address"}
+      email={"povertyindex@hotmail.com"}
+      descriptionEnd={"is now verified."}
+      buttonText={"Go to my Account"}
+    />
+  );
 };
 
 export default EmailSuccessful;
