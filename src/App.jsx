@@ -11,6 +11,7 @@ import ResetSuccessful from "./pages/ResetSuccessful";
 import EmailVerification from "./pages/EmailVerification";
 import EmailSuccessful from "./pages/EmailSuccessful";
 
+import BusinessLandingPage from "./pages/BusinessLandingPage";
 
 function App() {
   return (

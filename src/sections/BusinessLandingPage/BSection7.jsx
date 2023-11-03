@@ -1,8 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css';
 import 'swiper/css/effect-fade';
+import SecondaryButton from "../../components/Button/SecondaryButton";
+
 
 import image1 from '../../assets/imagep1.png';
 import image2 from '../../assets/imagep2.png';
@@ -14,10 +15,16 @@ import image7 from '../../assets/imagep7.png';
 import image8 from '../../assets/imagep8.png';
 import image9 from '../../assets/imagep9.png';
 
+
+
 const Section7 = () => {
+  const handleButtonClick = () => {
+};
+const buttonText = 'See all integrations';
+
   return (
             
-              <div className="bg-blue-500  rounded-bl-[40px] rounded-br-[40px] mx-auto">
+              <div className="bg-blue-500 rounded-[0_0_32px_32px] lg:rounded-[0_0_64px_64px] mx-auto">
           <div className=" p-4 mx-auto lg:w-1440 lg:h-633.912 lg:flex-shrink-0 ">
             <div className="text-center  pt-0 px-0">
               <h1 className="text-bluegray-2 text-center lg:text-fh-4xl p-4 text-fh-2xl-semi">
@@ -95,11 +102,20 @@ const Section7 = () => {
                 <div className="swiper-fade-effect-right"></div>
               </Swiper>
             </div>
-            <button className="mx-auto px-6 py-3 mb-20 mt-8 w-428 h-1762.445 text-bluegray-1 flex-shrink-0 rounded-lg border-2 border-white text-fh-base flex items-center">
-            See all integrations
-            </button>
+            
+            <div className="flex justify-center items-center py-3 mb-20 mt-8"> 
+            <SecondaryButton
+                clickHandler={handleButtonClick} 
+                text={buttonText} 
+                styles={{border:"solid white"  }}
+                textStyles={{ color:"white" }}
+
+              />
+            </div>
+
             </div>
             </div>
+            
             
 
 
