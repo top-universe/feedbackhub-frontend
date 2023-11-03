@@ -11,8 +11,7 @@ import ResetPassword from "./pages/ResetPassword";
 import ResetSuccessful from "./pages/ResetSuccessful";
 import EmailVerification from "./pages/EmailVerification";
 import EmailSuccessful from "./pages/EmailSuccessful";
-import Section7 from "./pages/Section7";
-import Section8 from "./pages/Section8";
+import BusinessPage from "./pages/BusinessPage";
 
 
 function App() {
@@ -30,8 +29,7 @@ function App() {
         <Route path="reset-password-successful" element={<ResetSuccessful />} />
         <Route path="email-verification" element={<EmailVerification />} />
         <Route path="email-verification-successful" element={<EmailSuccessful />} />
-        <Route path="section7" element={<Section7 />} />
-        <Route path="section8" element={<Section8 />} />
+        <Route path="business-page" element={<BusinessPage />} />
 
         <Route path="*" element={<NoPage />} />
 

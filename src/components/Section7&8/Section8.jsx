@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ellipse52 from '../assets/Ellipse52.png';
+import ellipse52 from "../../assets/Ellipse-52.png";
 
 const Section8 = () => {
   return (

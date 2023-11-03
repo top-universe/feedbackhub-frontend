@@ -3,21 +3,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import Section8 from './Section8';
 
-import image1 from '../assets/imagep1.png';
-import image2 from '../assets/imagep2.png';
-import image3 from '../assets/imagep3.png';
-import image4 from '../assets/imagep4.png';
-import image5 from '../assets/imagep5.png';
-import image6 from '../assets/imagep6.png';
-import image7 from '../assets/imagep7.png';
-import image8 from '../assets/imagep8.png';
-import image9 from '../assets/imagep9.png';
+import image1 from '../../assets/imagep1.png';
+import image2 from '../../assets/imagep2.png';
+import image3 from '../../assets/imagep3.png';
+import image4 from '../../assets/imagep4.png';
+import image5 from '../../assets/imagep5.png';
+import image6 from '../../assets/imagep6.png';
+import image7 from '../../assets/imagep7.png';
+import image8 from '../../assets/imagep8.png';
+import image9 from '../../assets/imagep9.png';
 
 const Section7 = () => {
   return (
-            <div>
+            
               <div className="bg-blue-500  rounded-bl-[40px] rounded-br-[40px] mx-auto">
           <div className=" p-4 mx-auto lg:w-1440 lg:h-633.912 lg:flex-shrink-0 ">
             <div className="text-center  pt-0 px-0">
@@ -101,8 +100,7 @@ const Section7 = () => {
             </button>
             </div>
             </div>
-            <Section8 />
-            </div> 
+            
 
 
          
