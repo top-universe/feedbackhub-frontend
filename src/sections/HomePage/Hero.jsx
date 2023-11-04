@@ -2,7 +2,7 @@ import heroImg from "../../assets/images/Reviews.svg";
 import heroBubble from "../../assets/images/bubble.svg";
 import GoldBubble from "../../assets/icons/ku-bubble.svg";
 import GoldBubbleMobile from "../../assets/icons/ku-bubble-mobile.svg";
-import PrimaryButton from "../../components/button/PrimaryButton";
+import PrimaryButton from "../../components/Button/PrimaryButton";
 const Hero = () => {
   return (
     <section className="relative bg-yellow-1 pt-12 pb-10 container-108">

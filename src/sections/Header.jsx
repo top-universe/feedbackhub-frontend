@@ -2,9 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/icons/logo-complete.svg";
 import menuOpen from "../assets/icons/menu-open.svg";
 import menuClose from "../assets/icons/menu-close.svg";
-import PrimaryButton from "../components/button/PrimaryButton";
+import PrimaryButton from "../components/Button/PrimaryButton";
 import useHeader from "../hooks/useHeader";
-import SecondaryButton from "../components/button/SecondaryButton";
+import SecondaryButton from "../components/Button/SecondaryButton";
 
 const Header = () => {
   const { openMenu, closeMenu, navLinkClasses, menuIsOpen } = useHeader();
