@@ -1,4 +1,6 @@
 import PrimaryButton from "../../components/Button/PrimaryButton";
+import DestructiveButton from "../../components/Button/DestructiveButton";
+import SecondaryButton from "../../components/Button/SecondaryButton";
 import form from '../../assets/images/form.png'
 import abstract from '../../assets/images/abstract.png'
 const Nine =() =>{
@@ -15,14 +17,19 @@ const Nine =() =>{
                     <p class='text-blue-2 text-fh-xs-mid md:text-fh-sm-mid mb-8 '> Insights Feedback for Better Business Insights</p>
                    
                    
-                    <img class=' absolute bottom-0 right-0 w-64 h-52' src={form} alt="pic" />
-                    {/* <button class='rounded-xl white-f9'>get started</button> */}
-                     <PrimaryButton text='get started'/>
+                    <img class=' absolute bottom-0 right-0 w-24 h-20 md:w-64 md:h-52 ' src={form} alt="pic" />
+
+                    <div class='grid place-items-center'>
+                        <PrimaryButton text='Get started' />
+                    </div>
+                     
+
+
                      {/* <SecondaryButton text='get started'/> */}
                      {/* <DestructiveButton text='get stared'/> */}
                 
             </div>
-                <img class=' absolute bottom-14 right-12 h-52 w-64 z-50' src={abstract} alt='picture'/>
+                <img class=' absolute bottom-14 right-12 w-24 h-20 md:w-64 md:h-52 z-50' src={abstract} alt='picture'/>
                 
         </section>
     )
