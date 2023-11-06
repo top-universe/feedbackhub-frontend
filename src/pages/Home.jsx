@@ -8,6 +8,7 @@ import OwnABusiness from "../sections/HomePage/OwnABusiness";
 import AboutUs from "../sections/HomePage/AboutUs";
 import FAQs from "../sections/HomePage/FAQs";
 import GetStarted from "../sections/HomePage/GetStarted";
+import Nine from "../components/section 8 9/nine";
 
 const Home = () => (
   <MainLayout>
@@ -21,6 +22,7 @@ const Home = () => (
       <AboutUs />
       <FAQs />
       <GetStarted />
+      <Nine />
     </>
   </MainLayout>
 )
