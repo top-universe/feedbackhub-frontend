@@ -54,6 +54,8 @@ export default {
 
         "black-0a": "#0A0A0A",
         "black-0a-50": "#0A0A0A50",
+        "black-0a-51": "#000A1F",
+
 
         "inp-info": "#3B82F6",
 

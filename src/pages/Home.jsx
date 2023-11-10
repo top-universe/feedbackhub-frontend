@@ -10,19 +10,19 @@ import FAQs from "../sections/HomePage/FAQs";
 import GetStarted from "../sections/HomePage/GetStarted";
 
 const Home = () => (
-  <MainLayout>
-    <>
-      <Hero />
-      <WhatWeProvide />
-      <Categories />
-      <Clients />
-      <Reviews />
-      <OwnABusiness />
-      <AboutUs />
-      <FAQs />
-      <GetStarted />
-    </>
-  </MainLayout>
-)
+	<MainLayout>
+		<>
+			<Hero />
+			<WhatWeProvide />
+			<Categories />
+			<Clients />
+			<Reviews />
+			<OwnABusiness />
+			<AboutUs />
+			<FAQs />
+			<GetStarted />
+		</>
+	</MainLayout>
+);
 
 export default Home;
