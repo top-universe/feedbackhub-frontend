@@ -4,9 +4,9 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import DesignedSwiperImages from "./DesignedSwiperImages.jsx";
 
-const DesignedSwiper = (props) => {
-  return (
-    <div className="w-full sm:flex-shrink-0">
+        const DesignedSwiper = (props) => {
+         return (
+          <div className="w-full sm:flex-shrink-0">
       <Swiper
         spaceBetween={10}
         slidesPerView={5}
