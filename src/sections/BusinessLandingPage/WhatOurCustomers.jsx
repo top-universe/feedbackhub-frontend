@@ -1,6 +1,5 @@
 import React from "react";
 import WhatOur from "../../components/WhatOur";
-
   
 function WhatOurCustomers() {
   return (

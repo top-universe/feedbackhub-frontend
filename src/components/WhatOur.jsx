@@ -1,16 +1,22 @@
 import React from 'react';
 import whatOurCm from '../assets/svg/whatOurCm';
-
+import isotope from 'isotope-layout';
 import Ellipse from "../assets/svg/Ellipse-52.png";
 
 const Section8 = (props) => {
-
+  const masonry = new isotope("#masonry",{
+    itemSelector : ".masonry-item",
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-sizer'
+  }
+  })
   return (
-          <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div id="masonry" className=" ">
             {whatOurCm.map((customer) => (
               <div
                 key={customer.id}
-                className="border border-bluegray-4 rounded-lg p-10 flex w-416 md:p-8 flex-col justify-start items-start flex-shrink-0"
+                className="border border-bluegray-4 rounded-lg p-10 flex w-416 md:p-8 flex-col justify-start items-start flex-shrink-0 h-fit masonry-item grid-sizer"
               >
                 <div className="flex items-center">
                   <p className="text-fh-lg text-grey-4f mb-1">{customer.saying}</p>
@@ -24,6 +30,7 @@ const Section8 = (props) => {
                 </div>
               </div>
             ))}
+            <div className='grid-sizer'></div>
           </div>
   );
 };
