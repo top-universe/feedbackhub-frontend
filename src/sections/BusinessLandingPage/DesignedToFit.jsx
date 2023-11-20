@@ -1,19 +1,11 @@
 import React from 'react';
 import SecondaryButton from "../../components/Button/SecondaryButton";
-import swiperImages from '../../swiperImages';
 import DesignedSwiper from '../../components/DesignedSwiper';
 
-function createImage(image) {
-  return {
-    id: image.id,
-    imgURL: image.imgURL,
-  };
-}
 
 const DesignedToFit = () => {
   const handleButtonClick = () => {
   };  
-  const images = swiperImages.map(createImage);
 
   return (
           <div className="bg-blue-500 rounded-[0_0_32px_32px] lg:rounded-[0_0_64px_64px] mx-auto">
@@ -28,7 +20,7 @@ const DesignedToFit = () => {
               </div>
             </div>
             <div className="w-full sm:flex-shrink-0 flex flex-wrap justify-center">
-            <DesignedSwiper images={swiperImages} />
+            <DesignedSwiper  />
             </div>
             <div className="flex justify-center items-center py-3 lg:pb-16 pb-14 mt-6">
               <SecondaryButton 
