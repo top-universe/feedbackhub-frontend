@@ -10,6 +10,7 @@ import ResetPassword from "./pages/ResetPassword";
 import ResetSuccessful from "./pages/ResetSuccessful";
 import EmailVerification from "./pages/EmailVerification";
 import EmailSuccessful from "./pages/EmailSuccessful";
+
 import BusinessLandingPage from "./pages/BusinessLandingPage";
 
 function App() {
@@ -41,3 +42,4 @@ function App() {
 }
 
 export default App;
+
